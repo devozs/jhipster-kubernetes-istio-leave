@@ -32,7 +32,7 @@ jobs:
           chmod +x ./gradlew
           ./gradlew clean test integrationTest
         displayName: 'TESTS: backend'
-      - script: ./leave/gradlew bootJar -Pprod -x test
+      - script: ./gradlew bootJar -Pprod -x test
         displayName: 'TESTS: packaging'
       #----------------------------------------------------------------------
       # Build
